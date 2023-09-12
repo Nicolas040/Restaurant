@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "playfair";
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+
+img,input {
+    width: 100%;
+}
+
+/* Le font-face permet de définir une police de caractère à partir d'un fichier. */
+
+* {
+    font-family: "playfair", serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 1px #000;
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    background-color: #FFF;
+    top: 0;
+}
+
+/* header>nav>ul  */
+header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* L'espace permet de cibler un élément enfant quel que soit le degré de parenté. */
+
+#logo,
+header li {
+    padding: 1.5rem;
+}
+
+/* La virgule permet de sélectionner plusieurs éléments. */
+#header-img {
+    background-image: url(../img/hamburger.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Le background-repeat est utile pour ne pas répéter l'image dans le cas d'écrans larges. */
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 7vh;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: #515C7C;
+    letter-spacing: .5rem;
+    font-size: large;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    text-align: left;
+}
+
+#about,
+#menu {
+    display: flex;
+    /* margin-top: 2rem; */
+    margin: 2rem auto 1.5rem auto;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#about div,
+#menu div {
+    width: 47%;
+}
+
+
+
+#about div:nth-child(2) p {
+    text-align: justify;
+    padding: 2rem;
+}
+
+#about div:nth-child(2) span {
+    color: blue;
+}
+
+#about div,
+#menu div,
+#about div *,
+/* #menu div * {
+    border: 1px blue solid;
+} */
+
+main h2,
+#about h3 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+#menu div:first-child p {
+    font-size: .8em;
+    font-style: italic;
+    text-align: left;
+}
+
+#contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact span {
+    color: cornflowerblue;
+    line-height: 3rem;
+}
+
+#contact h2 {
+    text-align: left;
+}
+
+#formulaire {
+    margin: 2rem auto 1.5rem auto;
+    width: 80%;
+}
+
+#contact input {
+    border: none;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+#contact #send {
+    border-bottom: none;
+    width: fit-content;
+}
+
+footer {
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    background-color: beige;
+}
